@@ -19,6 +19,7 @@
 		<module>cloud</module>
 		<module>server-a</module>
 		<module>server-b</module>
+		<module>txlcn-demo-tm</module>
 	</modules>
 
 	<properties>
