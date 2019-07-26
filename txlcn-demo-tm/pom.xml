@@ -8,9 +8,7 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>txlcn-demo-tm</artifactId>
-
     <name>txlcn-demo-tm</name>
 
     <dependencies>
@@ -39,20 +37,6 @@
             <artifactId>txlcn-tm</artifactId>
             <version>5.0.2.RELEASE</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-tc</artifactId>
-            <version>5.0.2.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.codingapi.txlcn</groupId>
-            <artifactId>txlcn-txmsg-netty</artifactId>
-            <version>5.0.2.RELEASE</version>
-        </dependency>
-
-
     </dependencies>
     <build>
         <plugins>

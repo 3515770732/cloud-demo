@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.example.demo.mapper.IUserMapper;
 import com.example.demo.model.user.po.User;
 import com.example.demo.service.IUserService;
@@ -15,8 +16,11 @@ public class UserServiceIpml implements IUserService {
 
     @Autowired
     private IUserMapper userMapper;
+
+
     @Override
     @Transactional
+    @LcnTransaction
     public int saveUser(User user) {
         userMapper.saveUser(user);
         return 1;
