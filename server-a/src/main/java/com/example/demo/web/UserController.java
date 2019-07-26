@@ -4,10 +4,7 @@ import com.example.demo.model.user.po.User;
 import com.example.demo.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by chen on 2019/7/23.
@@ -21,10 +18,10 @@ public class UserController {
     private IUserService userService;
 
 
-    @GetMapping(value = "/saveUser")
-    public String saveUser(){
+    @GetMapping(value = "/saveUser/{flag}")
+    public String saveUser(@PathVariable Integer flag){
         User user=new User("server-a");
-        userService.saveUser(user);
+        userService.saveUser(user,flag);
         return "新增成功";
     }
 

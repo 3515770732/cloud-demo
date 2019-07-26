@@ -8,5 +8,5 @@ import com.example.demo.model.user.po.User;
  */
 public interface IUserService {
 
-    public int saveUser(User user);
+    public int saveUser(User user,Integer flag);
 }
